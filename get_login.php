@@ -9,7 +9,12 @@
   $cek = mysqli_num_rows($sql);
   if($cek > 0){
     //--kalau datanya ada --
+    $data = mysqli_fetch_array($sql);
     $_SESSION['login'] = "sudah login";
+    $_SESSION['nama_lengkap'] = $data['nama_lengkap'];
+    $_SESSION['level'] = $data['level'];
+    $_SESSION['nik'] = $data['nik'];
+    header("location: admin/beranda.php");
   }else{
     echo "username atau password salah!";
   }

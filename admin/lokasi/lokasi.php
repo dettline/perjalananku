@@ -1,9 +1,9 @@
 <?php
 	session_start();
-	if(empty($_SESSION['login'])){
-		header('location: ../login.php');
+	if(empty($_SESSION['login']) or $_SESSION['level'] != "petugas"){
+		header('location: ../../login.php');
 	}
-	include "../koneksi.php";
+	include "../../koneksi.php";
 	include "form_lokasi.php";
 ?>
 DATA LOKASI

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body class="gradient">
+<body class="gradient d-flex flex-column min-vh-100">
   <?php include "header.php"; ?>
 
   <div class="container">
@@ -47,5 +47,8 @@
     </div>
   </div>
 
+  <footer class='mt-auto'>
+    <?php include "footer.php"; ?>
+  </footer>
 </body>
 </html>
