@@ -4,6 +4,7 @@
 		header('location: ../../login.php');
 	}
 	include "../../koneksi.php";
+	include "../header_admin.php";
 	include "form_lokasi.php";
 ?>
 DATA LOKASI

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 </head>
 <body class="gradient">
-  <?php include "../header_page.php"; ?>
+  <?php include "../header.php"; ?>
 
   <div class="container">
     <div class="row mt-5 pt-3">
